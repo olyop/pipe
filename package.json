@@ -2,8 +2,9 @@
 	"name": "@oly_op/pipe",
 	"type": "module",
 	"license": "MIT",
-	"version": "1.0.0",
-	"main": "index.ts",
+	"version": "1.0.1",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
 	"keywords": [
 		"pipe"
 	],
@@ -19,9 +20,12 @@
 		"url": "https://github.com/olyop/pipe.git"
 	},
 	"files": [
-		"index.ts"
+		"lib"
 	],
 	"scripts": {
+		"build": "npx tsc",
+		"prepare": "npm run build",
+		"postversion": "npm run push",
 		"sync": "git checkout . && git remote update && git pull",
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push -u origin master"
 	},

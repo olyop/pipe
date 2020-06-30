@@ -1,7 +1,9 @@
 {
 	"compilerOptions": {
 		"strict": true,
+		"outDir": "dist",
 		"target": "ESNEXT",
+		"declaration": true,
 		"module": "CommonJS",
 		"removeComments": true,
 		"noUnusedLocals": true,
@@ -11,5 +13,12 @@
 		"noFallthroughCasesInSwitch": true,
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true
-	}
+	},
+	"include": [
+		"index.ts"
+	],
+	"exclude": [
+		"dist",
+		"node_modules"
+	]
 }
