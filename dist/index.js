@@ -8,3 +8,4 @@ function pipe(...fns) {
     }, initialParams);
 }
 exports.pipe = pipe;
+//# sourceMappingURL=index.js.map
