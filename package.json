@@ -1,7 +1,7 @@
 {
 	"type": "module",
 	"license": "MIT",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"name": "@oly_op/pipe",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -25,7 +25,6 @@
 	"scripts": {
 		"build": "npx tsc",
 		"prepare": "npm run build",
-		"postversion": "npm run push",
 		"sync": "git checkout . && git remote update && git pull",
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push -u origin master"
 	},
