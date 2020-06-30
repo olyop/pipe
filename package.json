@@ -1,7 +1,7 @@
 {
 	"type": "module",
 	"license": "MIT",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"name": "@oly_op/pipe",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -20,7 +20,7 @@
 		"url": "https://github.com/olyop/pipe.git"
 	},
 	"files": [
-		"lib"
+		"dist"
 	],
 	"scripts": {
 		"prepare": "npx tsc",
