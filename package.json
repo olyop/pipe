@@ -25,6 +25,9 @@
 	"scripts": {
 		"build": "npx tsc",
 		"prepare": "npm run build",
+		"preversion": "npm run lint",
+		"version": "npm run format && git add -A src",
+		"postversion": "git push && git push --tags",
 		"sync": "git checkout . && git remote update && git pull",
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push -u origin master"
 	},
