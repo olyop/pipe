@@ -2,11 +2,8 @@
 	"compilerOptions": {
 		"strict": true,
 		"outDir": "dist",
-		"rootDir": "src",
-		"sourceMap": true,
 		"target": "ESNEXT",
 		"declaration": true,
-		"module": "CommonJS",
 		"removeComments": true,
 		"noUnusedLocals": true,
 		"esModuleInterop": true,
