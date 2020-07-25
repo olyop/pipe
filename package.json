@@ -1,8 +1,8 @@
 {
 	"license": "MIT",
-	"version": "2.1.4",
+	"version": "2.1.5",
 	"name": "@oly_op/pipe",
-	"main": "dist/index.js",
+	"main": "dist/index",
 	"types": "dist/index.d.ts",
 	"keywords": [
 		"pipe"
