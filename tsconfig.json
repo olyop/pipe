@@ -3,6 +3,7 @@
 		"strict": true,
 		"outDir": "dist",
 		"target": "ESNEXT",
+		"module": "ESNext",
 		"declaration": true,
 		"removeComments": true,
 		"noUnusedLocals": true,

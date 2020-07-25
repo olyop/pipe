@@ -1,6 +1,7 @@
 {
+	"type": "module",
 	"license": "MIT",
-	"version": "2.0.2",
+	"version": "2.1.2",
 	"name": "@oly_op/pipe",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -22,9 +23,10 @@
 		"dist"
 	],
 	"scripts": {
-		"build:esm": "npx tsc --module esnext",
-		"build:cjs": "npx tsc --module commonjs",
 		"postpublish": "npm run push",
+		"delete-build": "rm -r -f dist",
+		"prepublishOnly": "npm run build",
+		"build": "npm run delete-build && npx tsc",
 		"sync": "git checkout . && git remote update && git pull",
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push -u origin master"
 	},
@@ -32,7 +34,7 @@
 		"@typescript-eslint/eslint-plugin": "^3.5.0",
 		"@typescript-eslint/parser": "^3.5.0",
 		"eslint": "^7.3.1",
-		"eslint-config-airbnb-typescript": "^8.0.2",
+		"eslint-config-airbnb-typescript": "^9.0.0",
 		"eslint-plugin-import": "^2.22.0",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^4.2.1",
