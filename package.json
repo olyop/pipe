@@ -1,7 +1,7 @@
 {
 	"main": "dist",
 	"license": "MIT",
-	"version": "3.0.0",
+	"version": "3.1.0",
 	"description": "pipe",
 	"name": "@oly_op/pipe",
 	"types": "dist/index.d.ts",
