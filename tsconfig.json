@@ -4,6 +4,7 @@
 		"outDir": "dist",
 		"target": "ESNEXT",
 		"declaration": true,
+		"module": "CommonJS",
 		"removeComments": true,
 		"noUnusedLocals": true,
 		"esModuleInterop": true,
@@ -13,11 +14,7 @@
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true
 	},
-	"include": [
-		"src"
-	],
-	"exclude": [
-		"dist",
-		"node_modules"
+	"files": [
+		"src/index.ts"
 	]
 }

@@ -1,13 +1,10 @@
 {
+	"main": "dist",
 	"license": "MIT",
-	"version": "2.1.8",
-	"name": "@oly_op/pipe",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"keywords": [
-		"pipe"
-	],
+	"version": "3.0.0",
 	"description": "pipe",
+	"name": "@oly_op/pipe",
+	"types": "dist/index.d.ts",
 	"bugs": "https://github.com/olyop/pipe/issues",
 	"homepage": "https://github.com/olyop/pipe/blob/master/README.md",
 	"author": {
@@ -18,21 +15,17 @@
 		"type": "git",
 		"url": "https://github.com/olyop/pipe.git"
 	},
-	"files": [
-		"dist"
-	],
 	"scripts": {
+		"build": "npx tsc",
 		"postpublish": "npm run push",
 		"delete-build": "rm -r -f dist",
-		"build:esm": "npx tsc --module esnext",
-		"build:cjs": "npx tsc --module commonjs",
-		"build": "npm run delete-build && npx tsc",
+		"prepublishOnly": "npm run delete-build && npm run build",
 		"sync": "git checkout . && git remote update && git pull",
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push -u origin master"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^3.5.0",
-		"@typescript-eslint/parser": "^3.5.0",
+		"@typescript-eslint/eslint-plugin": "^3.7.1",
+		"@typescript-eslint/parser": "^3.7.1",
 		"eslint": "^7.3.1",
 		"eslint-config-airbnb-typescript": "^9.0.0",
 		"eslint-plugin-import": "^2.22.0",
