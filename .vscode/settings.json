@@ -1,4 +1,23 @@
 {
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"files.exclude": {
+		".git": true,
+		".env": true,
+		".vscode": true,
+		"debug.log": true,
+		"access.log": true,
+		"dist-server": true,
+		"node_modules/": true,
+		"dist-upload-server": true
+	},
+	"files.associations": {
+    "*.env.*": "dotenv"
+  },
 	"editor.tabSize": 2,
 	"git.enabled": false,
 	"editor.fontSize": 24,
@@ -8,10 +27,10 @@
 	"less.validate": false,
 	"scss.validate": false,
 	"editor.lineHeight": 24,
-  "editor.folding": false,
+	"editor.folding": false,
 	"git.confirmSync": false,
 	"editor.lineNumbers": "off",
-	"workbench.tree.indent": 20,
+	"workbench.tree.indent": 15,
 	"editor.glyphMargin": false,
 	"editor.fontWeight": "bold",
 	"editor.cursorStyle": "line",
@@ -24,10 +43,12 @@
 	"typescript.showUnused": false,
 	"explorer.confirmDelete": false,
 	"editor.minimap.enabled": false,
+	"editor.colorDecorators": false,
   "eslint.alwaysShowStatus": true,
+	"workbench.iconTheme": "vs-seti",
+	"editor.foldingHighlight": false,
 	"npm.enableRunFromFolder": false,
 	"editor.cursorBlinking": "smooth",
-	"npm.enableScriptExplorer": false,
 	"files.insertFinalNewline": false,
 	"typescript.format.enable": false,
 	"editor.renderWhitespace": "none",
@@ -39,6 +60,7 @@
 	"workbench.sideBar.location": "left",
 	"workbench.editor.tabSizing": "fit",
 	"workbench.statusBar.visible": true,
+	"css.colorDecorators.enable": false,
 	"scss.colorDecorators.enable": false,
 	"explorer.confirmDragAndDrop": false,
 	"workbench.colorTheme": "GitHub Plus",
@@ -46,26 +68,17 @@
 	"terminal.integrated.fontWeight": "800",
 	"editor.renderControlCharacters": false,
 	"workbench.editor.labelFormat": "medium",
+	"typescript.format.semicolons": "remove",
 	"workbench.editor.tabCloseButton": "off",
 	"extensions.ignoreRecommendations": true,
 	"terminal.integrated.confirmOnExit": true,
-	"terminal.integrated.rendererType": "dom",
 	"editor.find.autoFindInSelection": "never",
+	"terminal.integrated.rendererType": "canvas",
+	"workbench.editor.pinnedTabSizing": "compact",
+	"terminal.integrated.windowsEnableConpty": false,
 	"editor.fontFamily": "Liberation Mono, monospace",
-	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.tsdk": "c:\\code\\music-app\\node_modules\\typescript\\lib",
 	"javascript.updateImportsOnFileMove.enabled": "never",
 	"terminal.integrated.fontFamily": "Liberation Mono, monospace",
 	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-	"eslint.validate": [
-		"javascript",
-		"javascriptreact",
-		"typescript",
-		"typescriptreact"
-	],
-	"files.exclude": {
-		".vscode/": true,
-		"node_modules/": true,
-		// "dist": true,
-		".env": true
-	}
 }
